@@ -1,16 +1,43 @@
+html {
+    height:100%;
+}
+html a { color: #FFFFFF }
+
 body {
- margin: 0;
- background-image: url('../index_files/Yosemite.jpeg');
- background-size: 1440px 800px;
- background-repeat:no-repeat;
- display: compact;
- font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    background-image: url('../index_files/Yosemite.jpeg');
+    background-size: 1440px 800px;
+    background-repeat:no-repeat;
+    display: compact;
+    font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    height:100%;
+}
+
+header {
+    height: 30%;
+}
+
+p {
+    line-height: 90%;
+    font-size:180px;
+    word-wrap: break-word;
+    background-color:white;
+    opacity: 0.4;
 }
 
 .navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+    float:none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
 }
 
-.navbar li { color: #000 }
+
+
