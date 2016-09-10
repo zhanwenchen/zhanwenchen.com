@@ -33,14 +33,47 @@
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-12" id="text">
-          <p>
-          class Zhanwen extends Student implements Coder {<br>
-
-          &nbsp Student
-
-          </p>
-          </div>
-        </div></div>
+            <div style='background:#FFFFFF; font-family: Courier New, Courier; font-size: 10pt; COLOR: #000000; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;'><strong><font color='#7f0055'>class</font></strong>&nbsp;Zhanwen&nbsp;<strong><font color='#7f0055'>extends</font></strong>&nbsp;Coder&nbsp;{
+            <br/>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;Zhanwen(<strong><font color='#7f0055'>int</font></strong>&nbsp;zenness,&nbsp;<strong><font color='#7f0055'>boolean</font></strong>&nbsp;hadTea)&nbsp;{
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>super</font></strong>(7&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;laziness
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,10&nbsp;<font color='#3f7f5f'>//&nbsp;impatience
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,8&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;hubris);
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>this</font></strong>.codingSpeed&nbsp;=&nbsp;
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(hadTea)&nbsp;?&nbsp;100:(<strong><font color='#7f0055'>int</font></strong>)(Math.random()&nbsp;*&nbsp;100&nbsp;+&nbsp;1);
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+            <br/>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>public</font></strong>&nbsp;Code&nbsp;code()&nbsp;{
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(zenness>=80)&nbsp;{
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;Code(<font color='#2a00ff'>"wow"</font>&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;String&nbsp;codeCharacteristic
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;<strong><font color='#7f0055'>true</font></strong>&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;debugged
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;<strong><font color='#7f0055'>true</font></strong>&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;indented
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;<strong><font color='#7f0055'>true</font></strong>&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;elegant
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;<strong><font color='#7f0055'>true</font></strong>);&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;oop
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<strong><font color='#7f0055'>else</font></strong>&nbsp;<strong><font color='#7f0055'>if</font></strong>&nbsp;(zenness&nbsp;>=&nbsp;50)&nbsp;{
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>return</font></strong>&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;Code(<font color='#2a00ff'>"ok"</font>&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;String&nbsp;codeCharacteristic
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;Math.random()&nbsp;<&nbsp;0.5&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;debugged
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;Math.random()&nbsp;<&nbsp;0.5&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;indented
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;Math.random()&nbsp;<&nbsp;0.5&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;elegant
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;Math.random()&nbsp;<&nbsp;0.5);&nbsp;<font color='#3f7f5f'>//&nbsp;boolean&nbsp;oop
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<strong><font color='#7f0055'>else</font></strong>&nbsp;{
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>throw</font></strong>&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;LowZennessException(<font color='#2a00ff'>"need&nbsp;more&nbsp;zen"</font>);
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;}
+            <br/>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>private</font></strong>&nbsp;Undergrad&nbsp;undergrad&nbsp;=&nbsp;
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>new</font></strong>&nbsp;Undergrad(<font color='#2a00ff'>"Vassar&nbsp;College"</font>&nbsp;<font color='#3f7f5f'>//&nbsp;College
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;Graduation&nbsp;Month
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;Graduation&nbsp;Year
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;<font color='#2a00ff'>"CS"</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;Favorite&nbsp;Subject
+            </font><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;<font color='#2a00ff'>"VC++"</font>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#3f7f5f'>//&nbsp;Favorite&nbsp;Club
+            </font><br/>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>private</font></strong>&nbsp;Hobby&nbsp;piano,&nbsp;cooking,&nbsp;travel;
+            <br/>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong><font color='#7f0055'>private</font></strong>&nbsp;<strong><font color='#7f0055'>int</font></strong>&nbsp;zenness,&nbsp;teaLevel,&nbsp;codingSpeed,&nbsp;laziness,&nbsp;impatience,&nbsp;hubris;
+            <br/>}
+            <br/>
+            <br/></div>
     </div>
 
 
