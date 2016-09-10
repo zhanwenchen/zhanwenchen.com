@@ -64,6 +64,7 @@ li:last-of-type {
 
 #text {
     width: 110vmin;
+    max-width: 95%;
     margin: auto;
     margin-top: 0;
     padding: 0 0 0 0;
@@ -73,10 +74,9 @@ li:last-of-type {
 
 #text div {
     line-height: 100%;
-    font-size:4vmin;
+    max-width: 100%;
     word-wrap: break-word;
     background-color:white;
     opacity: 0.8;
 }
-
 
