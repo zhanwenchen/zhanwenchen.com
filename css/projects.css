@@ -19,20 +19,21 @@ body {
 }
 
 header {
-    height: 17%;
+    height: 33.5vmin;
 }
 
 #logo p {
     line-height: 90%;
-    font-size:26vmin;
+    font-size:11vmin;
     word-wrap: break-word;
     background-color:white;
     opacity: 0.4;
 }
 
 #logo {
-    width: 73vmin;
+    width: 32vmin;
     margin: auto;
+    margin-top: 4vmin;
     padding: 0 0 0 0;
     border: 0 0 0 0;
     float: none;
@@ -70,4 +71,26 @@ li:last-of-type {
     margin-right: 0;
 }
 
+#text {
+    width: 110vmin;
+    max-width: 95%;
+    margin: auto;
+}
+
+#text div {
+    line-height: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color:white;
+    opacity: 0.8;
+}
+
+#text a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+#text a:hover {
+    color: black;
+}
 

@@ -7,7 +7,7 @@ html a { color: #FFFFFF }
 body {
     height: 100%;
     margin: 0;
-    background-image: url('../index_files/Yosemite.jpeg');
+    background-image: url('../images/Yosemite.jpeg');
     background-size: 1440px 800px;
     background-repeat:no-repeat;
     display: compact;
@@ -47,6 +47,15 @@ header {
     background-color: transparent;
     background: transparent;
     border-color: transparent;
+}
+
+#logo a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+#logo a:hover {
+    color: black;
 }
 
 ul {
