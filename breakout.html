@@ -10,8 +10,10 @@
     <meta name="copyright" content="(c) www.zhanwenchen.com" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   </head>
   <body>
+
     <div class="container">
       <!-- Header Row -->
       <header class="row">
@@ -32,9 +34,9 @@
       <!-- Content -->
       <div class="row" id="text">
         <div class="col-md-12 text-center">
-          <img src="images/Breakout.png" class="img-responsive center-block" alt="Breakout Image">
-          <a href="breakout.html" style="color:black; text-decoration:none;"><h3>Breakout</h3></a>
-          <p></p>
+          <canvas id="breakoutCanvas" width="480" height="320"></canvas>
+          <script type="text/javascript" src="js/breakout.js"></script>
+          <div><a href="https://github.com/zhanwenchen/breakout-js">View Source Code on Github!</a></div>
         </div>
       </div>
     </div>

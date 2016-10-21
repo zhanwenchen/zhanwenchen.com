@@ -38,15 +38,6 @@ header {
     float: none;
 }
 
-#logo a {
-    color: rgb(51, 51, 51);
-    text-decoration: none;
-}
-
-#logo a:hover {
-    color: black;
-}
-
 .navbar {
     float:none;
     margin: 0 auto;
