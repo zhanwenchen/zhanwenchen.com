@@ -110,7 +110,8 @@ function collisionDetection() {
                     score++;
                     if (score == brickRowCount * brickColumnCount) {
                         document.location.reload();
-                        renderText('You win!')
+                        renderText('You win!');
+                        return;
                     }
                 }
             }
@@ -196,6 +197,7 @@ function draw() {
         if(!lives) {
             document.location.reload();
             renderText('Game over');
+            return;
         }
         else {
             x = canvas.width/2;
@@ -227,8 +229,11 @@ function renderText(text) {
     context.fillText(text, canvas.width/2, canvas.height/2);
 }
 
+var mainLoop = function () {
+    renderText('Click here to start');
+    $(window).one('click', function() {
+        draw();
+    });
+}
 
-renderText('Click here to start');
-$(window).one('click', function() {
-    draw();
-});
+mainLoop();
